@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <div id="app"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.0.0-alpha-8723e772b-20210826/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.0.0-alpha-8723e772b-20210826/umd/react-dom.development.min.js"></script>
+    <script>
+        let h1 = React.createElement('h1',null,'hello do h1 com react ')  //o React.createElement recebe 3 parâmetros, o primeiro é um elemento do html.. o segundo são propriedades e o terceiro é o conteúdo
+        ReactDOM.render(h1, document.getElementById("app ")) //o ReactDOM recebe 2 parâmetros o primeiro é o elemento que será renderizado e o segundo é onde ele será renderizado(local), recuperado atravéz do id da div.
+    </script>
+</body>
+</html>
+
