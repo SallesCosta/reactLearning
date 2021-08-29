@@ -1,0 +1,14 @@
+criei a pasta helloWorld
+
+criei um arquivo index.html
+
+instalei:
+npm install -g http-server
+
+ai eu dei um http-server e ja está rodando um servidor na porta 8080
+faz o mesmo que o liveserver que ja estou acostumado
+
+
+coloquei essa tag no body.. é a versao do react.. o conselho do professor é usar o ... umd/react.development...
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.0.0-alpha-8723e772b-20210826/umd/react.development.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.0.0-alpha-8723e772b-20210826/umd/react-dom.development.min.js"></script>
