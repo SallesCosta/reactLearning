@@ -13,8 +13,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
-    
-    <script type="text/babel">
+
+    <!-- <script type="text/babel">
         // forma 1
         // var h1 = React.createElement('h1', null, [
         //     React.createElement('span', null, 'texto do span'),
@@ -24,11 +24,25 @@
 
         //forma 2
         ReactDOM.render(
-                <h1>helloWossssrld</h1>, 
-                document.getElementById('app')
-            ) 
+            <h1>helloWossssrld</h1>,
+            document.getElementById('app')
+        )
             // o React.createElement recebe 3 parâmetros, o primeiro é um elemento do html.. o segundo são propriedades e o terceiro é o conteúdo
             // o ReactDOM recebe 2 parâmetros o primeiro é o elemento que será renderizado e o segundo é onde ele será renderizado(local), recuperado atravéz do id da div.
+    </script> -->
+
+    
+    <script type="text/babel">
+        var Title = React.createClass({
+            render: function () {
+                return <h1>helloWorld da Aula 6</h1>
+            }
+        })
+
+        ReactDOM.render(
+            <Title />,
+            document.getElementbyId('app')
+        )
     </script>
 </body>
 
