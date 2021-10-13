@@ -9,5 +9,4 @@ var Title = React.createClass({
   }
 })
 
-//module.exports = Title  //esse é o padrão do CommonJS
-export default Title  // padrão do EcmaScript2015
+export default Title 

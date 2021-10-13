@@ -42,7 +42,7 @@ echo {} >> package.json
 
 # npm install --save react@15.4 react-dom@15.4
 
-#instalar npm install --save-dev babel-core@6 babel-loader@6 babel-preset-es2015@6 babel-preset-stage-0@6
+npm install --save-dev babel-core@6 babel-loader@6 babel-preset-es2015@6 babel-preset-stage-0@6
 #instalar npm install --save-dev babel-preset-react@6
 
 
