@@ -1,12 +1,11 @@
-// aqui é um módulo.. daqui eu exporto as funções para o entryPoint
 'use strict'
 
-var React = require('react')
+import React from 'react'
 
 var Title = React.createClass({
-  render: function() {
-    return React.createElement('h1', null, 'Título')
+  render: function () {
+    return <h1>Título</h1>
   }
 })
 
-export default Title 
+export default Title
