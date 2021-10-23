@@ -16,7 +16,7 @@ function App() {
             count is: {count}
           </button>
         </p>
-        <Title name='Eduardo' lastName='Salles' />
+        <Title name='Eduardo' />
         <p>
           <a
             className="App-link"
