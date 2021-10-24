@@ -1,22 +1,38 @@
 import { useState } from 'react'
-import logo from './logo.svg'
 import './App.css'
 import { Title } from './components/title'
 import React, { Component } from 'react'
 import { Button, LikeButton, SearchButton } from './button'
 
 class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+       text: 'inicial'
+    }
+  }
   render() {
     return (
-      <div className='container'>
-        <Title name='Eduardo' />
-        <Button><b>T</b>e<b>X</b>t<b>A</b>o</Button> {/* dessa forma (com children), da pra colocar mais elementos dentro do botão. */}
-        <LikeButton />
-        <SearchButton />
+      <div className='container' onClick={ () => this.setState({text: 'outro texto'})}>
+        {this.state.text}
       </div>
     )
   }
 }
+
+// Aula 29
+// class App extends Component {
+//   render() {
+//     return (
+//       <div className='container'>
+//         <Title name='Eduardo' />
+//         <Button><b>T</b>e<b>X</b>t<b>A</b>o</Button> {/* dessa forma (com children), da pra colocar mais elementos dentro do botão. */}
+//         <LikeButton />
+//         <SearchButton />
+//       </div>
+//     )
+//   }
+// }
 
 // function App() {
 //   const [count, setCount] = useState(0)
