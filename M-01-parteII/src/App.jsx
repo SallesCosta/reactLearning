@@ -3,12 +3,14 @@ import logo from './logo.svg'
 import './App.css'
 import { Title } from './components/title'
 import React, { Component } from 'react'
+import { Button } from './button'
 
 class App extends Component {
   render() {
     return (
       <div className='container' onClick={(e) => {alert('clicou')}}>
         <Title name='Eduardo'/>
+        <Button><b>T</b>e<b>X</b>t<b>A</b>o</Button> {/* dessa forma (com children), da pra colocar mais elementos dentro do botão. */}
       </div>
     )
   }
