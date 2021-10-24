@@ -3,15 +3,16 @@ import logo from './logo.svg'
 import './App.css'
 import { Title } from './components/title'
 import React, { Component } from 'react'
-import { Button, LikeButton } from './button'
+import { Button, LikeButton, SearchButton } from './button'
 
 class App extends Component {
   render() {
     return (
-      <div className='container' onClick={(e) => {alert('clicou')}}>
-        <Title name='Eduardo'/>
+      <div className='container'>
+        <Title name='Eduardo' />
         <Button><b>T</b>e<b>X</b>t<b>A</b>o</Button> {/* dessa forma (com children), da pra colocar mais elementos dentro do botão. */}
         <LikeButton />
+        <SearchButton />
       </div>
     )
   }
@@ -20,7 +21,7 @@ class App extends Component {
 // function App() {
 //   const [count, setCount] = useState(0)
 
- //   return (
+//   return (
 //     <div className="App">
 //       <header className="App-header">
 //         <img src={logo} className="App-logo" alt="logo" />
