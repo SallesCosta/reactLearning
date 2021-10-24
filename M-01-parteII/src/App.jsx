@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import {Title} from './components/title'
-import React from 'react'
+import { Title } from './components/title'
+import React, { Component } from 'react'
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
-      <div className='container'>
-        <Title name='Eduardo' />
+      <div className='container' onClick={(e) => {alert('clicou')}}>
+        <Title name='Eduardo'/>
       </div>
     )
   }
