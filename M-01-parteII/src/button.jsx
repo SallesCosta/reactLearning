@@ -13,7 +13,7 @@ export const SearchButton = () => {
   return <Button handleClick={() => alert('SearchButton')}>Search Button</Button>
 }
 
-export const Square = (color) => {
+export const Square = ({color}) => {
   return <div style={{
     width:'100px',
     height:'100px',
