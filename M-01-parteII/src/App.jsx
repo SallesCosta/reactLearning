@@ -15,9 +15,9 @@ class App extends Component {
     return (
       <div>
         <Square color={this.state.color}/>
-        <Button>Verde</Button>
-        <Button>Vermelho</Button>
-        <Button>Azul</Button>
+        {['red', 'green', 'blue'].map((color) =>(
+          <Button handleClick={() => this.setState({color})}>{color}</Button>
+        ))} 
       </div>
     )
   }
