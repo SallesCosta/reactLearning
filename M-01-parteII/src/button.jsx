@@ -20,3 +20,7 @@ export const Square = ({color}) => {
     backgroundColor: color,
   }}></div>
 }
+
+Square.defaultProps = {
+  color: 'grey'
+}
