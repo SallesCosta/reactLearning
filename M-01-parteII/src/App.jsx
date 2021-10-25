@@ -2,23 +2,41 @@ import { useState } from 'react'
 import './App.css'
 import { Title } from './components/title'
 import React, { Component } from 'react'
-import { Button, LikeButton, SearchButton } from './button'
+import { Button, LikeButton, SearchButton, Square } from './button'
 
 class App extends Component {
   constructor() {
     super()
     this.state = {
-       text: 'inicial'
+      color: 'green'
     }
   }
   render() {
     return (
-      <div className='container' onClick={ () => this.setState({text: 'outro texto'})}>
-        {this.state.text}
+      <div>
+        <Square color={this.state.color}/>
+        <Button>Verde</Button>
+        <Button>Vermelho</Button>
+        <Button>Azul</Button>
       </div>
     )
   }
 }
+// class App extends Component {
+//   constructor() {
+//     super()
+//     this.state = {
+//        text: 'inicial'
+//     }
+//   }
+//   render() {
+//     return (
+//       <div className='container' onClick={ () => this.setState({text: 'outro texto'})}>
+//         {this.state.text}
+//       </div>
+//     )
+//   }
+// }
 
 // Aula 29
 // class App extends Component {
