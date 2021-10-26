@@ -11,7 +11,8 @@ class App extends Component {
     console.log('constructor')
     super()
     this.state = {
-      color: 'grey'
+      color: 'grey',
+      showTimer: 'true',
     }
   }
 
@@ -22,15 +23,19 @@ class App extends Component {
   componentDidMount() {
     console.log('componentDidMount')
   }
+
+
+
   render() {
     console.log('render')
     return (
       <div>
-        <Square color={this.state.color}/>
-        {['red', 'green', 'blue'].map((color) =>(
-          <Button key={color} handleClick={() => this.setState({color})}>{color}</Button>
+        <Square color={this.state.color} />
+        {['red', 'green', 'blue'].map((color) => (
+          <Button key={color} handleClick={() => this.setState({ color })}>{color}</Button>
         ))}
-        <Timer />
+        {this.state.showTimer &&  <Timer />}
+        <Button handleClick={() => this.setState({showTimer: !this.state.showTimer })}>Show/Hide Timer</Button>
       </div>
     )
   }
