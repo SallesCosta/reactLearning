@@ -3,6 +3,7 @@ import './App.css'
 import { Title } from './components/title'
 import React, { Component } from 'react'
 import { Button, LikeButton, SearchButton, Square } from './button'
+import Timer from './components/timer'
 
 // aula 32
 class App extends Component {
@@ -17,6 +18,10 @@ class App extends Component {
   componentWillMount() {
     console.log('componentWillMount')
   }
+
+  componentDidMount() {
+    console.log('componentDidMount')
+  }
   render() {
     console.log('render')
     return (
@@ -25,6 +30,7 @@ class App extends Component {
         {['red', 'green', 'blue'].map((color) =>(
           <Button key={color} handleClick={() => this.setState({color})}>{color}</Button>
         ))}
+        <Timer />
       </div>
     )
   }
