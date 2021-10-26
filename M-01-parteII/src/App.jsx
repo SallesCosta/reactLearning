@@ -5,24 +5,30 @@ import React, { Component } from 'react'
 import { Button, LikeButton, SearchButton, Square } from './button'
 
 // aula 32
-// class App extends Component {
-//   constructor() {
-//     super()
-//     this.state = {
-//       color: 'grey'
-//     }
-//   }
-//   render() {
-//     return (
-//       <div>
-//         <Square color={this.state.color}/>
-//         {['red', 'green', 'blue'].map((color) =>(
-//           <Button key={color} handleClick={() => this.setState({color})}>{color}</Button>
-//         ))}
-//       </div>
-//     )
-//   }
-// }
+class App extends Component {
+  constructor() {
+    console.log('constructor')
+    super()
+    this.state = {
+      color: 'grey'
+    }
+  }
+
+  componentWillMount() {
+    console.log('componentWillMount')
+  }
+  render() {
+    console.log('render')
+    return (
+      <div>
+        <Square color={this.state.color}/>
+        {['red', 'green', 'blue'].map((color) =>(
+          <Button key={color} handleClick={() => this.setState({color})}>{color}</Button>
+        ))}
+      </div>
+    )
+  }
+}
 // class App extends Component {
 //   constructor() {
 //     super()
