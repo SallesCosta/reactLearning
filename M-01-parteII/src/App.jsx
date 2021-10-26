@@ -18,11 +18,11 @@ class App extends Component {
   }
 
   componentWillMount() {
-    console.log('componentWillMount')
+    console.log('componentWillMount do app')
   }
 
   componentDidMount() {
-    console.log('componentDidMount')
+    console.log('componentDidMount do app')
   }
 
 
