@@ -12,7 +12,8 @@ class App extends Component {
     super()
     this.state = {
       color: 'grey',
-      showTimer: 'true',
+      showTimer: false,
+      time: 0 ,
     }
   }
 
@@ -34,7 +35,7 @@ class App extends Component {
         {['red', 'green', 'blue'].map((color) => (
           <Button key={color} handleClick={() => this.setState({ color })}>{color}</Button>
         ))}
-        {this.state.showTimer &&  <Timer />}
+        {this.state.showTimer &&  <Timer time={this.state.time} />}
         <Button handleClick={() => this.setState({showTimer: !this.state.showTimer })}>Show/Hide Timer</Button>
       </div>
     )
