@@ -4,10 +4,11 @@ export class Formulario extends Component {
   constructor() {
     super()
     this.state = {
-      value: 'Valor inicial'
+      value: 'Valor inicial',
+      checked: false
     }
   }
-  render () {
+  render() {
     return (
       <div>
         <form>
@@ -17,7 +18,13 @@ export class Formulario extends Component {
             })
           }} />
           <label>
-        <input type='checkbox' checked/>Checkbox
+            <input
+              type='checkbox'
+              checked={this.state.checked}
+              value='my-checkbox'
+              onChange={(e) => this.setState({ checked: !this.state.checked})}
+            />
+            Checkbox
           </label>
         </form>
       </div>
