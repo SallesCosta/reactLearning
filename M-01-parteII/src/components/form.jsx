@@ -22,15 +22,19 @@ export class Formulario extends Component {
               type='checkbox'
               checked={this.state.checked}
               value='my-checkbox'
-              onChange={(e) => this.setState({ checked: !this.state.checked})}
+              onChange={(e) => this.setState({ checked: !this.state.checked })}
             />
-              Checkbox controlado
+            Checkbox controlado
+          </label>
+          <label>
             <input //controled
               type='checkbox'
               defaultChecked={false}
             />
             Checkbox Não controlado
           </label>
+          <input type='radio' name='rd' value='1' defaultChecked/> Radio 1
+          <input type='radio' name='rd' value='2' /> Radio 2
         </form>
       </div>
     )
