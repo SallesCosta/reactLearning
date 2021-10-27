@@ -5,7 +5,8 @@ export class Formulario extends Component {
     super()
     this.state = {
       value: 'Valor inicial',
-      checked: false
+      checked: false,
+      select: '2'
     }
   }
   render() {
@@ -33,13 +34,20 @@ export class Formulario extends Component {
             />
             Checkbox Não controlado
           </label>
-          <input type='radio' name='rd' value='1' defaultChecked/> Radio 1
+          <input type='radio' name='rd' value='1' defaultChecked /> Radio 1
           <input type='radio' name='rd' value='2' /> Radio 2
-          <select>
+          <select
+            multiple
+            value={['1','2']}
+            onChange={(e) =>  this.setState({
+              select: e.target.value
+            })}
+          >
             <option value='1'>op 1</option>
-            <option value='2' selected>op 2</option>
+            <option value='2'>op 2</option>
             <option value='3'>op 3 </option>
           </select>
+            {this.state.select}
         </form>
       </div>
     )
