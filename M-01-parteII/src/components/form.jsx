@@ -48,6 +48,7 @@ export class Formulario extends Component {
             <option value='3'>op 3 </option>
           </select>
             {this.state.select}
+            <textarea defaultValue={'default\nvalue'} />
         </form>
       </div>
     )
