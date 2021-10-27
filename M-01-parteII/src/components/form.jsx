@@ -1,4 +1,5 @@
 import { Component } from "react"
+import { Button } from "../button"
 
 export class Formulario extends Component {
   constructor() {
@@ -12,7 +13,16 @@ export class Formulario extends Component {
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit={(e) => {
+          e.preventDefault()
+          console.log('e')
+          }}
+          onChange={(e) => {
+            e.preventDefault()
+            console.log('name: ', e.target.name)
+            console.log('value: ', e.target.value)
+          }}
+          >
           <input type='text' value={this.state.value} onChange={(e) => {
             this.setState({
               value: e.target.value
@@ -48,7 +58,8 @@ export class Formulario extends Component {
             <option value='3'>op 3 </option>
           </select>
             {this.state.select}
-            <textarea defaultValue={'default\nvalue'} />
+            <textarea defaultValue={'default\nvalue'}  name='o e veio do name'/>
+            <button type='submit'>enviar</button>
         </form>
       </div>
     )
