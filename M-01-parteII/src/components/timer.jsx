@@ -15,7 +15,7 @@ class Timer extends Component {
 
   shouldComponentUpdate (nextProps, nextState) {
     // console.log('shouldComponentUpdate ')
-    return true
+    return false
   }
 
   componentWillUpdate (nextProps, nexState) {

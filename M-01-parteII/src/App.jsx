@@ -4,6 +4,7 @@ import { Title } from './components/title'
 import React, { Component } from 'react'
 import { Button, LikeButton, SearchButton, Square } from './button'
 import Timer from './components/timer'
+import { Form } from './components/form'
 
 
 // Aula 39
@@ -11,7 +12,8 @@ class App extends Component {
   render() {
     return(
       <div>
-        <Button handleClick={() => {console.log('clicou')}}>Clique</Button>
+        <Form/>
+        {/* <Button handleClick={() => {console.log('clicou')}}>Clique</Button> */}
       </div>
     )
   }
