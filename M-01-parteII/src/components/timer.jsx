@@ -15,12 +15,15 @@ class Timer extends Component {
 
   shouldComponentUpdate (nextProps, nextState) {
     // console.log('shouldComponentUpdate ')
-    return false
+    return true
   }
 
   componentWillUpdate (nextProps, nexState) {
     // console.log('componentWillUpdate ', this.props, nextProps)
+  }
 
+  componentDidUpdate (prevProps, prevState) {
+    console.log('componentDidUpdate', prevProps, thií.props )
   }
 
   componentDidMount() {
@@ -36,3 +39,4 @@ class Timer extends Component {
 }
 
 export default Timer
+
