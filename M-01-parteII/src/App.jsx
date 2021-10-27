@@ -5,45 +5,58 @@ import React, { Component } from 'react'
 import { Button, LikeButton, SearchButton, Square } from './button'
 import Timer from './components/timer'
 
-// aula 32
+
+// Aula 39
 class App extends Component {
-  constructor() {
-    console.log('constructor')
-    super()
-    this.state = {
-      color: 'grey',
-      showTimer: false,
-      time: 0,
-    }
-  }
-
-  componentWillMount() {
-    console.log('componentWillMount do app')
-  }
-
-  componentDidMount() {
-    console.log('componentDidMount do app')
-  }
-
-
-
   render() {
-    console.log('render')
-    return (
+    return(
       <div>
-        <Square color={this.state.color} />
-        {['red', 'green', 'blue'].map((color) => (
-          <Button key={color} handleClick={() => this.setState({ color })}>{color}</Button>
-        ))}
-        <Timer time={this.state.time} />
-        <Button handleClick={() => this.setState({ time: this.state.time + 10  })}
-        >
-          ChangeProps
-        </Button>
+        <Button handleClick={() => {console.log('clicou')}}>Clique</Button>
       </div>
     )
   }
+
 }
+
+// aula 32
+// class App extends Component {
+//   constructor() {
+//     console.log('constructor')
+//     super()
+//     this.state = {
+//       color: 'grey',
+//       showTimer: false,
+//       time: 0,
+//     }
+//   }
+
+//   componentWillMount() {
+//     console.log('componentWillMount do app')
+//   }
+
+//   componentDidMount() {
+//     console.log('componentDidMount do app')
+//   }
+
+
+
+//   render() {
+//     console.log('render')
+//     return (
+//       <div>
+//         <Square color={this.state.color} />
+//         {['red', 'green', 'blue'].map((color) => (
+//           <Button key={color} handleClick={() => this.setState({ color })}>{color}</Button>
+//         ))}
+//         <Timer time={this.state.time} />
+//         <Button handleClick={() => this.setState({ time: this.state.time + 10  })}
+//         >
+//           ChangeProps
+//         </Button>
+//       </div>
+//     )
+//   }
+// }
 // class App extends Component {
 //   constructor() {
 //     super()
