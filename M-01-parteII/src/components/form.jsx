@@ -16,6 +16,9 @@ export class Formulario extends Component {
               value: e.target.value
             })
           }} />
+          <label>
+        <input type='checkbox' checked/>Checkbox
+          </label>
         </form>
       </div>
     )
