@@ -1,8 +1,8 @@
 
-export const Form = () => {
+export const Formulario = () => {
   return (
-    <Form>
+    <form>
       <input />
-    </Form>
+    </form>
   )
 }
