@@ -12,7 +12,6 @@ class App extends Component {
   render() {
     return(
       <div>
-        aff
         <Formulario/>
         {/* <Button handleClick={() => {console.log('clicou')}}>Clique</Button> */}
       </div>

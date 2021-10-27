@@ -1,8 +1,23 @@
+import { Component } from "react"
 
-export const Formulario = () => {
-  return (
-    <form>
-      <input />
-    </form>
-  )
+export class Formulario extends Component {
+  constructor() {
+    super()
+    this.state = {
+      value: 'Valor inicial'
+    }
+  }
+  render () {
+    return (
+      <div>
+        <form>
+          <input type='text' value={this.state.value} onChange={(e) => {
+            this.setState({
+              value: e.target.value
+            })
+          }} />
+        </form>
+      </div>
+    )
+  }
 }
