@@ -35,6 +35,11 @@ export class Formulario extends Component {
           </label>
           <input type='radio' name='rd' value='1' defaultChecked/> Radio 1
           <input type='radio' name='rd' value='2' /> Radio 2
+          <select>
+            <option value='1'>op 1</option>
+            <option value='2' selected>op 2</option>
+            <option value='3'>op 3 </option>
+          </select>
         </form>
       </div>
     )
