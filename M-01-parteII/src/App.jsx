@@ -9,11 +9,33 @@ import { Formulario } from './components/form'
 
 // Aula 40
 class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      checked: false,
+      showContent: false,
+    }
+  }
   render() {
-    return(
+    return (
       <div>
-        <Formulario/>
+        <Formulario />
         {/* <Button handleClick={() => {console.log('clicou')}}>Clique</Button> */}
+        <label>
+          <input
+            type='checkbox'
+            checked={this.state.checked}
+            onChange={() =>{
+              this.setState({ checked: !this.state.checked
+              },() => {
+                this.setState({
+                  showContent: this.state.checked
+                })
+              })
+          }} />
+           mostrar conteudo
+        </label>
+        {this.state.showContent && <p>olha eu aqui </p>}
       </div>
     )
   }
