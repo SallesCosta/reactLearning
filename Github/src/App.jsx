@@ -18,6 +18,12 @@ function App() {
           <button>Ver repositórios</button>
           <button>Ver Favoritos </button>
         </div>
+        <ul className='repos'>
+          <li><a href='#'> Nome do Repositório</a></li>
+        </ul>
+        <ul className='starred'>
+          <li><a href='#'> Nome do Repositório</a></li>
+        </ul>
       </div>
     </div>
   )
