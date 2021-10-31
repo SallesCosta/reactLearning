@@ -3,6 +3,9 @@ function App() {
 
   return (
     <div className='app'>
+      <div className='search'>
+        <input type='search' placeholder='digite o nome...' />
+      </div>
       <div className='userInfo'>
         <img src='https://avatars.githubusercontent.com/u/81476236?v=4' />
         <h1>
