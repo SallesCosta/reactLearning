@@ -1,3 +1,4 @@
+import React from "react"
 
 export const Repos = ({ titulo, repos, className }) => (
     <>
@@ -13,3 +14,13 @@ export const Repos = ({ titulo, repos, className }) => (
         </div>
     </>
 )
+
+// Repos.defaultProps = {
+//     className: '',
+// }
+
+// Repos.propTypes = {
+//     className: React.PropTypes.string,
+//     titulo: React.PropTypes.string.isRequired,
+//     repos: React.PropTypes.array,
+// }
