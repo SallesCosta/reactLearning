@@ -1,10 +1,13 @@
+import Search from "./components/search"
+
 function App() {
 
   return (
     <div className='app'>
-      <div className='search'>
+      {/* <div className='search'>
         <input type='search' placeholder='digite o nome...' />
-      </div>
+      </div> */}
+      <Search />
       <div className='user-info'>
         <img src='https://avatars.githubusercontent.com/u/81476236?v=4' />
         <h1>
@@ -39,5 +42,6 @@ function App() {
     </div>
   )
 }
+
 
 export default App
