@@ -15,10 +15,10 @@ export const Repos = ({ titulo, repos, className }) => (
     </>
 )
 
-// Repos.defaultProps = {
-//     className: '',
-// }
-
+Repos.defaultProps = {
+    className: '',
+}
+// // aula 48
 // Repos.propTypes = {
 //     className: React.PropTypes.string,
 //     titulo: React.PropTypes.string.isRequired,
