@@ -10,8 +10,22 @@ function App() {
       <Search />
       <UserInfo />
       <Action />
-      <Repos titulo='Repositórios' link='#' className='repos' />
-      <Repos titulo='Favoritos' link='#' className='starred' />
+      <Repos
+        titulo='Repositórios'
+        className='repos'
+        repos={[{
+          name: 'nome do repositório',
+          link: '#',
+        }]}
+      />
+      <Repos
+        titulo='Favoritos'
+        className='starred'
+        repos={[{
+          name: 'nome do repositório',
+          link: '#'
+        }]}
+      />
     </div>
   )
 }

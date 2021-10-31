@@ -1,12 +1,14 @@
 
-export const Repos = ({titulo, link, className}) => (
+export const Repos = ({ titulo, repos, className }) => (
     <>
         <div className={className}>
             <h2>{titulo}: </h2>
             <ul>
-                <li>
-                    <a href={link}> Nome do Repositório</a>
-                </li>
+                {repos.map((i, index) => (
+                    <li key={index}>
+                        <a href={i.link}>{i.name}</a>
+                    </li>
+                ))}
             </ul>
         </div>
     </>
