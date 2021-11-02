@@ -9,7 +9,7 @@ const [userInfo, setUserInfo] = useState({
     repos: 12,
     followers: 10,
     following: 12,
-  }
+  },
 })
 const [repos, setRepos] = useState([])
 const [starred, setStarred] = useState([])
