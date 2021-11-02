@@ -1,5 +1,3 @@
-import React, { PropTypes } from 'react'
-
 export const Search = ({ isDisabled, handleSearch }) => (
   <div className='search'>
     <input

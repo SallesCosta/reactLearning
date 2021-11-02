@@ -1,5 +1,3 @@
-import React, { PropTypes } from 'react'
-
 export const UserInfo = ({ userinfo }) => (
   <div className='user-info'>
     <img src={userinfo.photo} />
