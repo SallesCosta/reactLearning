@@ -1,5 +1,3 @@
-'use strict'
-
 import React, { PropTypes } from 'react'
 
 export const UserInfo = ({ userinfo }) => (
@@ -20,15 +18,15 @@ export const UserInfo = ({ userinfo }) => (
   </div>
 )
 
-UserInfo.propTypes = {
-  userinfo: PropTypes.shape({
-    username: PropTypes.string.isRequired,
-    photo: PropTypes.string.isRequired,
-    login: PropTypes.string.isRequired,
-    repos: PropTypes.number.isRequired,
-    followers: PropTypes.number.isRequired,
-    following: PropTypes.number.isRequired
-  })
-}
+// UserInfo.propTypes = {
+//   userinfo: PropTypes.shape({
+//     username: PropTypes.string.isRequired,
+//     photo: PropTypes.string.isRequired,
+//     login: PropTypes.string.isRequired,
+//     repos: PropTypes.number.isRequired,
+//     followers: PropTypes.number.isRequired,
+//     following: PropTypes.number.isRequired
+//   })
+// }
 
 // export default UserInfo

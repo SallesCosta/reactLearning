@@ -1,22 +1,19 @@
-import ajax from '@fdaciuk/ajax'
+import React, { PropTypes } from 'react'
 
-export const Search = () => (
-    <div className='search'>
-        <input
-            type='search'
-            placeholder='digite o nome...'
-            onKeyUp={(e) => {
-                const value = e.target.value
-                const KeyCode = e.which || e.keyCode
-                const ENTER = 13
-                if (KeyCode === ENTER) {
-                    ajax().get(`https://api.github.com/user/${value}`)
-                    .then((result) => {
-                         console.log(result)
-                    })
-                }
-                console.log(KeyCode)
-            }}
-        />
-    </div>
+export const Search = ({ isDisabled, handleSearch }) => (
+  <div className='search'>
+    <input
+      type='search'
+      placeholder='Digite o nome do usuário no GitHub'
+      disabled={isDisabled}
+      onKeyUp={handleSearch}
+    />
+  </div>
 )
+
+// Search.propTypes = {
+//   handleSearch: PropTypes.func.isRequired,
+//   isDisabled: PropTypes.bool.isRequired
+// }
+
+// export default Search

@@ -1,5 +1,3 @@
-
-
 import React, { PropTypes } from 'react'
 import { Search } from './search'
 import { UserInfo } from './userinfo'
@@ -39,14 +37,14 @@ export const AppContent = ({
     </div>
 )
 
-AppContent.propTypes = {
-    userinfo: PropTypes.object,
-    repos: PropTypes.array.isRequired,
-    starred: PropTypes.array.isRequired,
-    isFetching: PropTypes.bool.isRequired,
-    handleSearch: PropTypes.func.isRequired,
-    getRepos: PropTypes.func.isRequired,
-    getStarred: PropTypes.func.isRequired
-}
+// AppContent.propTypes = {
+//     userinfo: PropTypes.object,
+//     repos: PropTypes.array.isRequired,
+//     starred: PropTypes.array.isRequired,
+//     isFetching: PropTypes.bool.isRequired,
+//     handleSearch: PropTypes.func.isRequired,
+//     getRepos: PropTypes.func.isRequired,
+//     getStarred: PropTypes.func.isRequired
+// }
 
 // export default AppContent
