@@ -1,9 +1,9 @@
 
-export const UserInfo = () => (
+export const UserInfo = ({ userinfo }) => (
     <div className='user-info'>
-        <img src='https://avatars.githubusercontent.com/u/81476236?v=4' />
+        <img src={userinfo.photo} />
         <h1>
-            <a target='_blank' href='https://github.com/SallesCosta'>Eduardo</a>
+            <a target='_blank' href={`https://github.com/${userinfo.login}`}>Eduardo</a>
         </h1>
         <ul className='repos-info'>
             <li>Repositórios: 100</li>

@@ -4,11 +4,11 @@ import { UserInfo } from './userinfo'
 import { Action } from "./action"
 import React, { useState } from 'react'
 
-export const AppContent = ({ UserInfo, repos, starred }) => (
+export const AppContent = ({ userinfo, repos, starred }) => (
     <div className='app'>
         <Search />
-        {!!UserInfo && <UserInfo UserInfo={UserInfo} />}
-        {!!UserInfo && <Action />}
+        {!!userinfo && <UserInfo userinfo={userinfo} />}
+        {!!userinfo && <Action />}
         {!!repos.length && <Repos
             titulo='Repositórios'
             className='repos' 
