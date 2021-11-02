@@ -2,6 +2,7 @@ import { Repos } from './repos'
 import { Search } from "./search"
 import { UserInfo } from './userinfo'
 import { Action } from "./action"
+import React from 'react'
 
 export const AppContent = ({ UserInfo, repos, starred }) => (
     <div className='app'>
@@ -17,7 +18,7 @@ export const AppContent = ({ UserInfo, repos, starred }) => (
             }]}
         />
         }
-        {!!repos.length && <Repos
+        {!!starred.length && <Repos
             titulo='Favoritos'
             className='starred'
             repos={[{
@@ -28,3 +29,9 @@ export const AppContent = ({ UserInfo, repos, starred }) => (
         }
     </div>
 )
+
+AppContent.propTypes = {
+    UserInfo: React.PropTypes.object.isRequired,
+    repos: React.PropTypes.array.isRequired,
+    starred: React.PropTypes.array.isRequired,
+}

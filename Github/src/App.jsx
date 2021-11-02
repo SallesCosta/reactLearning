@@ -3,7 +3,14 @@ import { AppContent } from './components/app-content'
 
 
 function App() {
-const [userInfo, setUserInfo] = useState(null)
+const [userInfo, setUserInfo] = useState({
+  userinfor: {
+    username: 'Fernando Daciuk',
+    repos: 12,
+    followers: 10,
+    following: 12,
+  }
+})
 const [repos, setRepos] = useState([])
 const [starred, setStarred] = useState([])
   return <AppContent 

@@ -1,3 +1,4 @@
+import { PropTypes} from 'react'
 
 export const Repos = ({ titulo, repos, className }) => (
     <>
@@ -18,8 +19,8 @@ Repos.defaultProps = {
     className: '',
 }
 // // aula 48
-// Repos.propTypes = {
-//     className: React.PropTypes.string,
-//     titulo: React.PropTypes.string.isRequired,
-//     repos: React.PropTypes.array,
-// }
+Repos.propTypes = {
+    className: PropTypes.string,
+    titulo: PropTypes.string.isRequired,
+    repos: PropTypes.array,
+}
