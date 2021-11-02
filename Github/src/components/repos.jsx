@@ -1,26 +1,28 @@
-// import { PropTypes} from 'react'
+'use strict'
+import React, { PropTypes } from 'react'
 
-export const Repos = ({ titulo, repos, className }) => (
-    <>
-        <div className={className}>
-            <h2>{titulo}: </h2>
-            <ul>
-                {repos.map((i, index) => (
-                    <li key={index}>
-                        <a href={i.link}>{i.name}</a>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    </>
+
+export const Repos = ({ className, title, repos }) => (
+  <div className={className}>
+    <h2>{title}</h2>
+    <ul>
+      {repos.map((repo, index) => (
+        <li key={index}>
+          <a href={repo.link}>{repo.name}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
 )
 
 Repos.defaultProps = {
-    className: '',
+  className: ''
 }
-// // aula 48
-// Repos.propTypes = {
-//     className: PropTypes.string,
-//     titulo: PropTypes.string.isRequired,
-//     repos: PropTypes.array,
-// }
+
+Repos.propTypes = {
+  className: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  repos: PropTypes.array
+}
+
+// export default Repos
