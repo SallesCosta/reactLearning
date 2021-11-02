@@ -11,15 +11,15 @@ export const AppContent = ({ userinfo, repos, starred }) => (
         {!!userinfo && <Action />}
         {!!repos.length && <Repos
             titulo='Repositórios'
-            className='repos' 
+            className='repos'
             repos={repos}
-            />
+        />
         }
         {!!starred.length && <Repos
             titulo='Favoritos'
             className='starred'
-            repos={starred }
-         />
+            repos={starred}
+        />
         }
     </div>
 )
