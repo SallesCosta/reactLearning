@@ -21,6 +21,10 @@ const [starred, setStarred] = useState([{
   name: 'Repo',
   link: '#',
 }])
+
+console.table(userinfo)
+console.table(repos)
+console.table(starred)
   return <AppContent 
     userinfo={userinfo}
     repos={repos}
