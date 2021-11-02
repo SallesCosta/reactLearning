@@ -1,33 +1,16 @@
-import { Action } from "./components/action"
-import { Repos } from "./components/repos"
-import { Search } from "./components/search"
-import { UserInfo } from './components/userinfo'
+import { useState } from "react"
+import { AppContent } from './components/app-content'
+
 
 function App() {
-
-  return (
-    <div className='app'>
-      <Search />
-      <UserInfo />
-      <Action />
-      <Repos
-        titulo='Repositórios'
-        className='repos'
-        repos={[{
-          name: 'nome do repositório',
-          link: '#',
-        }]}
-      />
-      <Repos
-        titulo='Favoritos'
-        className='starred'
-        repos={[{
-          name: 'nome do repositório',
-          link: '#'
-        }]}
-      />
-    </div>
-  )
+const [userInfo, setUserInfo] = useState(null)
+const [repos, setRepos] = useState([])
+const [starred, setStarred] = useState([])
+  return <AppContent 
+    userInfo={userInfo}
+    repos={repos}
+    starred={starred}
+  />
 }
 
 
