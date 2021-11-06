@@ -1,10 +1,7 @@
+const React = require('react')
 const ReactDOMServer = require('react-dom/server')
 const Title = require('./components/title')
  
-// const c = (x) => {
-//     console.log(x)
-// }
+const TitleComponent = ReactDOMServer.renderToStaticMarkup(React.createElement(Title))
 
-// c('repos imported', repos)
-
-console.log(Title)
+console.log(TitleComponent)
