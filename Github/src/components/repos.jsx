@@ -4,7 +4,7 @@ export const Repos = ({ className, title, repos }) => (
     <ul>
       {repos.map((repo, index) => (
         <li key={index}>
-          <a href={repo.link}>{repo.name}</a>
+          <a href={repo.link} target='_blank'>{repo.name}</a>
         </li>
       ))}
     </ul>
