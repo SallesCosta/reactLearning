@@ -5,4 +5,4 @@ const $ = require('whacko')
  
 const TitleComponent = ReactDOMServer.renderToStaticMarkup(React.createElement(Title))
 
-console.log(TitleComponent)
+console.log($(TitleComponent).get(0).tagName)
