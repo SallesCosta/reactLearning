@@ -30,7 +30,7 @@ class App extends Component {
       this.setState({ isFetching: true })
 
       ajax().get(this.getGitHubApiUrl(value))
-        .then((result) => {
+        .then(result => {
           this.setState({
             userinfo: {
               username: result.name,
