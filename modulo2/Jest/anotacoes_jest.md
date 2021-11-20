@@ -1,7 +1,7 @@
 ### no terminal
 echo {} >> package.json 
 
-yarn add --save-dev jest-cli
+yarn add --dev jest
+<!-- yarn add --save-dev jest-cli -->
 
-// todo => dd new featur CRUD
-+todo => dd new featur CRUD+
+yarn add chai
