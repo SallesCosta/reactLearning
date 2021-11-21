@@ -10,8 +10,8 @@
 //     expect(1).toBe(1)
 // })
 
-const expect = require('chai').expect
-const sum = require('./sum')
+import expect from 'chai'
+import sum from './sum'
 it('sum should be a function ', () => {
     expect(sum).to.be.a('function')
     // expect(sum).to.be.an('object ')
