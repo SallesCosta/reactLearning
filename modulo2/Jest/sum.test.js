@@ -1,8 +1,8 @@
-const expect = require('chai').expect
-const sum = require('./sum')
+// const expect = require('chai').expect
+// const sum = require('./sum')
 
-// import chai from 'chai'
-// import { sum } from './sum'
+import { expect } from 'chai'
+import sum from './sum'
 
 
 // describe('#ESCOPO', () => {
@@ -19,6 +19,10 @@ const sum = require('./sum')
 //     expect(1).toBe(2)
 // })
 
-it('sum should be a function', () =>{
+it('sum should be a function', () => {
     expect(sum).to.be.a('function')
-} )
+})
+
+it('sum( 1, 2 ) should be 3', () => {
+    expect(sum(1,2)).to.be.equal(3)
+})

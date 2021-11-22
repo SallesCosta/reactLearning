@@ -1,5 +1,3 @@
-module.exports = () => { 
-    if (1==2) {
-        return
-    }
+export default () => {
+    return 3 
 }
