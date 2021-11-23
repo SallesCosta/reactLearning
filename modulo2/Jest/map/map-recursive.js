@@ -1,13 +1,16 @@
-let counter = 0
 const map = (arr = [], func = (item) => item) => {
-    if(arr.lengh === 0) {
-        counter=0
-        return []
-    }
+    let counter = 0
+    const mapInternal = (arrInternal) => {
+        if (arr.length === 0) {
+            return []
+        }
 
-    console.log(counter)
-    const [head, ...tail] = arr
-    return [func(head, counter++)].concat(map(tail,func))
-  }
-  
-  export default map 
+        console.log(counter)
+        const [head, ...tail] = arrInternal
+        return [func(head, counter++)].concat(mapInternal(tail, func))
+    }
+    return mapInternal(arrInternal)
+}
+
+
+export default map
