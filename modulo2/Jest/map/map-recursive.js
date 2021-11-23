@@ -1,10 +1,7 @@
 const map = (arr = [], func = (item) => item) => {
     return (function mapInternal(arrInternal, counter) {
-        if (arrInternal.length === 0)
-            return []
-
         const [head, ...tail] = arrInternal
-        return [
+        return arrInternal.length === 0 ? [] : [
             func(head, counter, arr),
         ...mapInternal(tail, counter +1)
         ]
