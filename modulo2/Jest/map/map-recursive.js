@@ -6,7 +6,7 @@ const map = (arr = [], func = (item) => item) => {
         }
 
         const [head, ...tail] = arrInternal
-        return [func(head, counter++)].concat(mapInternal(tail, func))
+        return [func(head, counter++, arr)].concat(mapInternal(tail, func))
     }
     return mapInternal(arr)
 }
