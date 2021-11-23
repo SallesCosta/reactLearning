@@ -15,4 +15,4 @@ const map = (arr = [], func = (item) => item) => {
     return newArr
   }
   
-  export default map
+  export default map 
