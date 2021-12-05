@@ -1,1 +1,3 @@
-export const every = () => {}
+export const every = ([]) => {
+    return []
+}
