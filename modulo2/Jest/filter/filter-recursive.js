@@ -1,7 +1,11 @@
- 
+
 const filter = (arr, func) => {
-   return (function filterInternal(arrayInternal, counter) {
-        
-   })(arr, 0)
+    return (function filterInternal(arrayInternal, counter) {
+        const [head, ...tail] = arrayInternal
+        return arrayInternal.length === 0
+            ? []
+            : (func(head, counter, arr) ? [head] : [])
+                .concat(filterInternal(tail, conter + 1))
+    })(arr, 0)
 }
-export default filter 
+export default filter
