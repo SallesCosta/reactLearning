@@ -1,6 +1,6 @@
 import { Search } from './search'
 import { UserInfo } from './userinfo'
-import { Actions } from './actions'
+import { Actions } from './actions/actions'
 import { Repos } from './repos'
 
 export const AppContent = ({
