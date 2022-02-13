@@ -16,11 +16,13 @@
     "webpack-validator": "^3.0.0"
   },
   "dependencies": {
+    "getstorybook": "1.6.1",
+    "global": "^4.4.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
   "standard": {
-    "globals":[
+    "globals": [
       "alert"
     ]
   }

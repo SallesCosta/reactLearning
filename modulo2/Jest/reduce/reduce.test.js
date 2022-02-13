@@ -22,7 +22,7 @@ it('reduce([2, 3, 4], (acc, item) => acc + item, 0) should return 9', () => {
 it('reduce([2, 3, 4], (acc, item) => acc + item) should return 9', () => {
   const before = reduce([2, 3, 4], (acc, item) => acc + item)
   const after = 9
-  expect(before).t.be.equal(after)
+  expect(before).to.be.equal(after)
 })
 
 it('reduce([1, 2], (acc, item) => { acc["number-" + item] = item; return acc }, {}) should return {"number-1": 1, "number-2": 2}', () => {
