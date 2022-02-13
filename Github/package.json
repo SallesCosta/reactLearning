@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.0",
+    "html-webpack-plugin": "^5.5.0",
     "raw-loader": "^4.0.2",
     "vite": "^2.6.4",
     "whacko": "^0.19.1"
